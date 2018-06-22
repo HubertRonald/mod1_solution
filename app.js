@@ -29,6 +29,7 @@ function LunchCheckController($scope) {
 
   
   $scope.myLunchChecker = function () {
+    if ($scope.names == null) {$scope.names = "";}
     if ($scope.names == "") {
       $scope.msg = " Please enter data first ";
       $scope.turnRed();
